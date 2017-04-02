@@ -35,15 +35,15 @@
             android:layout_alignEnd="@+id/text_password" />
 
         <TextView
+            android:id="@+id/title_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Password"
-            android:id="@+id/title_password"
             android:layout_below="@+id/text_email"
             android:layout_centerHorizontal="true"
-            android:textSize="15dp"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:text="Mot de passe"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
 
         <EditText
             android:layout_width="wrap_content"

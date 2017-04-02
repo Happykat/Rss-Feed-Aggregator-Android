@@ -11,9 +11,7 @@
     <color name="blue">#18599A</color>
     <color name="darkblue">#073366</color>
     <color name="lightgray">#A6A6A7</color>
-    <color name="red_action_bar">#00aaff</color>
-    <color name="red_drawer">#700024</color>
-    <color name="light_red_drawer">#be003d</color>
+    <color name="action_bar">#00aaff</color>
     <color name="black_drawer">#2B2B2B</color>
     <color name="light_black_drawer">#515151</color>
     <color name="white">#FFFFFF</color>
