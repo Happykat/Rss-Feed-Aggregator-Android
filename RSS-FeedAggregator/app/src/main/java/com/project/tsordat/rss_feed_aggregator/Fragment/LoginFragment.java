@@ -100,14 +100,14 @@ public class LoginFragment extends Fragment {
                     currentUser.setPassword(password);
                     ((MainActivity) getActivity()).displayHomePage(currentUser);
                 } else {
-                    Toast.makeText((MainActivity) getActivity(), "Failed to connect, please try again", Toast.LENGTH_SHORT).show();
+                    Toast.makeText((MainActivity) getActivity(), "Échec de la connexion, veuillez réessayer.", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<Credential> call, Throwable t) {
                 System.out.println("On failure login : " + t.getMessage());
-                Toast.makeText((MainActivity) getActivity(), "Failed to connect, please try again", Toast.LENGTH_SHORT).show();
+                Toast.makeText((MainActivity) getActivity(), "Échec de la connexion, veuillez réessayer.", Toast.LENGTH_SHORT).show();
                 hideDialog();
             }
         });
@@ -138,19 +138,19 @@ public class LoginFragment extends Fragment {
                                 currentUser.setPassword(password);
                                 ((MainActivity) getActivity()).displayHomePage(currentUser);
                             } else {
-                                Toast.makeText((MainActivity) getActivity(), "Failed to connect, please try again", Toast.LENGTH_SHORT).show();
+                                Toast.makeText((MainActivity) getActivity(), "Échec de la connexion, veuillez réessayer.", Toast.LENGTH_SHORT).show();
                             }
                         }
 
                         @Override
                         public void onFailure(Call<Credential> call, Throwable t) {
                             System.out.println("On failure login : " + t.getMessage());
-                            Toast.makeText((MainActivity) getActivity(), "Failed to connect, please try again", Toast.LENGTH_SHORT).show();
+                            Toast.makeText((MainActivity) getActivity(), "Échec de la connexion, veuillez réessayer.", Toast.LENGTH_SHORT).show();
                             hideDialog();
                         }
                     });
                 } else {
-                    Toast.makeText((MainActivity) getActivity(), "Failed to register, please try again", Toast.LENGTH_SHORT).show();
+                    Toast.makeText((MainActivity) getActivity(), "Échec de l'enregistrement, veuillez réessayer.", Toast.LENGTH_SHORT).show();
                     hideDialog();
                 }
             }
@@ -158,7 +158,7 @@ public class LoginFragment extends Fragment {
             @Override
             public void onFailure(Call<Credential> call, Throwable t) {
                 System.out.println("On failure login : " + t.getMessage());
-                Toast.makeText((MainActivity) getActivity(), "Failed to register, please try again", Toast.LENGTH_SHORT).show();
+                Toast.makeText((MainActivity) getActivity(), "Échec de l'enregistrement, veuillez réessayer.", Toast.LENGTH_SHORT).show();
                 hideDialog();
             }
         });
